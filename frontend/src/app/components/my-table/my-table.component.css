@@ -1,0 +1,157 @@
+.back{
+    background-image: url('https://sun9-12.userapi.com/c857128/v857128242/29378/tLeQ8sDyq68.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+.hide{
+    display: none;
+}
+.colorchange{
+    color:blue;
+}
+
+.red{
+    background:white;
+    
+}
+.blue{
+    color:blue;
+}
+
+
+/*.textcolor{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white; 
+    margin-bottom: 10rem;
+}*/
+.firsttext{
+  text-align: center; 
+  font-weight: 400;
+  color: white;
+  font-size: 4.8rem;
+  margin-top: 7rem;
+}
+.secondtext{
+    text-align: center;
+    font-size:1.77rem;
+    font-weight: 350;
+    color:lightgray;
+    margin-top: 1rem;
+}
+
+.backgrcl {
+    background-color: white;
+    padding: 2rem;
+}
+.random {
+    margin-left: 13rem;
+    margin-right: 13rem;
+    padding-top:2rem;
+}
+.bottom{
+    margin-bottom: 9rem;
+}
+
+.navbar-brand{
+    color:white;
+}
+.navbar-brand:hover{
+    color:white;
+}
+
+li{ 
+    list-style-type: none;
+}
+.nav-link{
+    color:white;
+}
+.btn-margin{
+    margin-right: 1rem;
+}
+
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+    -webkit-appearance: none;
+}
+.input-container input {
+    border: none;
+    box-sizing: border-box;
+    outline: 0;
+    padding: .75rem;
+    position: relative;
+    width: 100%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    width: auto;
+}
+
+.form-group {
+   margin-bottom: 0;
+}
+
+.frm-input{
+    height: 3rem;
+}
+.border{
+    border:none;
+}
+
+.form {
+    display: flex;
+}
+
+
+
+@media (max-width: 992px){
+    .btn-find{
+        width: 100%;
+    }
+    .firsttext {
+        text-align: center; 
+        font-weight: 400;
+        color: white;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .secondtext{
+        text-align: center;
+        font-weight: 350;
+        color:lightgray;
+        margin-top: 1rem;
+        font-size:1.3rem;
+    }
+    .stolb{
+        display:block;
+        
+    }
+    .top{
+        margin-top:0.5rem;
+    }
+
+    .form {
+        display: block;
+        
+    }
+    .someDiv{
+        display:block;
+        
+    }
+
+}

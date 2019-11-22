@@ -1,0 +1,82 @@
+<form class="back" [ngClass]="isMenuOpen==true ? 'red' : 'blue'">
+  <div class='container'>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a [ngClass]="isMenuOpen==true? 'colorchange': 'navbar-brand'" href="#"><strong>SPACES</strong></a>
+        <button (click)="onClickMe()" class="navbar-toggler " type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a [ngClass]="isMenuOpen==true? 'colorchange': 'nav-link'" href="#">Home <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li>
+            </li>
+            <li class="nav-item dropdowns">
+              <a [ngClass]="isMenuOpen==true? 'colorchange': 'nav-link dropdown-toggle'" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+
+
+            </li>
+            <li class="nav-item dropdown">
+              <a [ngClass]="isMenuOpen==true? 'colorchange': 'nav-link dropdown-toggle'" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Support
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+
+            </li>
+
+
+
+          </ul>
+          <form class="form my-2 my-lg-0">
+            <li> <button type="button" class="btn btn-primary btn-margin stolb">Login</button></li>
+            <li><button type="button" class="btn btn-light btn-margin stolb top">Sign up</button></li>
+            <li><button type="button" class="btn btn-outline-light stolb top"><strong>+</strong> List a Space</button>
+            </li>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div [ngClass]="isMenuOpen==true? 'hide': ''">
+      <div class="firsttext">
+        Find your perfect <strong>coworking</strong> space.
+        <br>
+      </div>
+      <div class="secondtext">
+        <strong>12,000+</strong> coworking spaces with desks, offices & meeting rooms in <strong>165+</strong>
+        countries.
+        <br>
+        Discover and reserve space today.
+        <br><br>
+      </div>
+
+      <div class="backgrcl">
+        <div class="form-row someDiv ">
+          <div class="col form-group top">
+            <input type="text" class="form-control frm-input" id="inputlg" placeholder="Search location">
+          </div>
+          <div class="form-group col top">
+            <input type="text" placeholder="Select Date" onfocus="(this.type='date')"
+              onblur="if(this.value==''){this.type='text'}" name="bday" max="3000-12-31" min="1000-01-01"
+              class="form-control frm-input">
+          </div>
+          <button type="button" class="btn btn-primary top btn-find">Find a desk</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

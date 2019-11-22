@@ -1,0 +1,8 @@
+.TT{
+    margin:6rem;
+}
+@media(max-width: 992px){
+    .TT{
+        margin:5rem;
+    }
+}

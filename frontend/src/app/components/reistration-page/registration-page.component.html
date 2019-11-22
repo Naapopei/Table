@@ -1,0 +1,24 @@
+<div class="TT">
+<form #myForm="ngForm">
+    <div class="form-group">
+        <label>Name</label>
+        <input class="form-control bgc" type="text" [(ngModel)]="user.name" value="{{user.name}}" required name="name">
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input class="form-control bgf " name="age" [(ngModel)]="user.age" value="{{user.age}}" required>
+    </div>
+    <div class="form-group">
+        <label>Weight</label>
+        <input class="form-control bgt" name="weight" [(ngModel)]="user.weight" value="{{user.weight}}" required>
+    </div>
+    <div class="form-group" *ngIf="!isEditMode">
+        <input type="submit"  (click)="onSubmit(user)" [disabled]="myForm.invalid" class="btn btn-primary" value="Register">
+    </div>
+    <div class="form-group" *ngIf="isEditMode" >
+        <input type="submit" (click)="onClickChange(user)" [disabled]="myForm.invalid" class="btn btn-primary" value="Change">
+    </div>
+</form>
+<button (click)="onClick()" *ngIf="isEditMode" type="button" class="btn btn-danger" >Delete</button>
+</div>
+    
